@@ -8,21 +8,21 @@ Below are the questions I want to answer in my project:
 
 1. What are the skills most in demand for the top 3 most popular data roles?
 2. How are in-demand skills trending for Data Analysts?
-3. How well do jobs and skills pay for Data Analysts?
-4. What are the optimal skills for data analysts to learn? (High Demand AND High Paying)
-5. What are the Median Salaries offered across different country for 3 popular data role?
-
+3. Top 10 skills for Data Analyst? (High Demand)
+4. What are the Median Salaries offered across Top 5 country for 3 popular data role
+5. How do different data jobs Titles?
+6. What are the optimal skills for data analysts to learn? (High Demand AND High Paying)
 # Tools I Used
 For my deep dive into the data analyst job market, I harnessed the power of several key tools:
-- Python: The backbone of my analysis, allowing me to analyze the data and find critical insights.
+- **Python**: The backbone of my analysis, allowing me to analyze the data and find critical insights.
 
 - I also used the following Python libraries:
     - Pandas Library: This was used to analyze the data.
     - Matplotlib Library: I visualized the data.
     - Seaborn Library: Helped me create more advanced visuals.
-- Jupyter Notebooks: The tool I used to run my Python scripts which let me easily include my notes and analysis.
-- Visual Studio Code: My go-to for executing my Python scripts.
-- Git & GitHub: Essential for version control and sharing my Python code and analysis, ensuring collaboration and project tracking.
+- **Jupyter Notebooks**: The tool I used to run my Python scripts which let me easily include my notes and analysis.
+- **Visual Studio Code**: My go-to for executing my Python scripts.
+- **Git & GitHub**: Essential for version control and sharing my Python code and analysis, ensuring collaboration and project tracking.
 # Data Preparation and Cleanup
 This section outlines the steps taken to prepare the data for analysis, ensuring accuracy and usability
 ## Import & Clean Up Data
@@ -46,4 +46,77 @@ df['job_skills'] = df['job_skills'].apply(lambda skill:ast.literal_eval(skill) i
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
 To find the most demanded skills for the top 3 most popular data roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 3 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting.
 
-View my notebook with detailed steps here: [2_Skill_Demand](C:\Users\verma\OneDrive\Desktop\PYTHON_DATA_PROJECT\Data_Science_Job_Postings_analysis\8_Top_skillsFor_DataScientists_Engineers_Analysts.ipynb)
+View my notebook with detailed steps here: [2_Skill_Demand](/Data_Science_Job_Postings_analysis/8_Top_skillsFor_DataScientists_Engineers_Analysts.ipynb)
+
+### Results:
+![alt text](image.png)
+
+Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.
+
+## 2. How are in-demand skills trending for Data Analysts?
+
+To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
+
+View my notebook with detailed steps here:
+[Top 5 Skills Trend](/Data_Science_Job_Postings_analysis/7_Top5_skills_trend_across_year_DataAnalyst.ipynb)
+
+### Result:
+![alt text](image-1.png)
+
+
+
+## 3. Top 10 skills for Data Analyst? (High Demand)
+
+To identify the Top 10 skills For Data Analyst, I only got jobs in the United States and also filtered the data specially for Data Analyst and looked at Total count of each Skilss in job postings data.
+
+View my notebook with detailed steps here: [Top_10](/Data_Science_Job_Postings_analysis/6_Top_10_skills_for_Data_Analyst.ipynb)
+
+### Result:
+![alt text](image-3.png)
+
+The Graph shows Skills like: **SQL**, **Excel**, **Python** are The One in high demand 
+
+## 4. What are the Median Salaries offered across Top 5 country for 3 popular data role
+To identify the Median salaries offered across different countries for 3 popular data roles, Used pandas pivot_table function to retrieve the data for the analysis and filtered that pivot table specially for the Top 3 data roles.
+
+View my notebook with detailed steps here: [Top_5_countires](/Data_Science_Job_Postings_analysis/4_Top5_country_median_salary_analysis.ipynb)
+
+### Result:
+![alt text](image-4.png)
+
+## 5. How do different data jobs Titles?
+
+To identify the highest-paying job roles, I only got jobs in the United States and looked at their median salary.
+
+View my notebook with detailed steps here:[Media Salary For Diff JOB TITLES](/Data_Science_Job_Postings_analysis/3_MedianSalary_of_Diff_JobTitles.ipynb)
+
+### Result:
+![alt text](image-2.png)
+
+## 6. What are the optimal skills for data analysts to learn? (High Demand AND High Paying)
+To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
+
+View my notebook with detailed steps here: [Scatter_plot](/Data_Science_Job_Postings_analysis/11_Data_Analyst_skills_MedianSalaryVsTotalCount.ipynb)
+
+### Result:
+![alt text](image-5.png)
+- More commonly required skills like Excel and SQL have a large presence in job listings but lower median salaries compared to specialized skills like Python and Tableau, which not only have higher salaries but are also moderately prevalent in job listings.
+- Skills such as Python, Tableau, and SQL Server are towards the higher end of the salary spectrum while also being fairly common in job listings, indicating that proficiency in these tools can lead to good opportunities in data analytics.
+
+# What I Learned
+Throughout this project, I deepened my understanding of the data analyst job market and enhanced my technical skills in Python, especially in data manipulation and visualization. 
+
+Here are a few specific things I learned:
+- **Advanced Python Usage**: Utilizing libraries such as Pandas for data manipulation, Seaborn and Matplotlib for data visualization, and other libraries helped me perform complex data analysis tasks more efficiently.
+- **Data Cleaning Importance**: I learned that thorough data cleaning and preparation are crucial before any analysis can be conducted, ensuring the accuracy of insights derived from the data.
+- **Strategic Skill Analysis**: The project emphasized the importance of aligning one's skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry.
+
+# Challenges I Faced
+This project was not without its challenges, but it provided good learning opportunities:
+
+- **Data Inconsistencies**: Handling missing or inconsistent data entries requires careful consideration and thorough data-cleaning techniques to ensure the integrity of the analysis.
+- **Complex Data Visualization**: Designing effective visual representations of complex datasets was challenging but critical for conveying insights clearly and compellingly.
+- **Balancing Breadth and Depth**: Deciding how deeply to dive into each analysis while maintaining a broad overview of the data landscape required constant balancing to ensure comprehensive coverage without getting lost in details.
+
+# Conclusion
+This exploration into the data analyst job market has been incredibly informative, highlighting the critical skills and trends that shape this evolving field. The insights I got enhance my understanding and provide actionable guidance for anyone looking to advance their career in data analytics. As the market continues to change, ongoing analysis will be essential to stay ahead in data analytics. This project is a good foundation for future explorations and underscores the importance of continuous learning and adaptation in the data field.
