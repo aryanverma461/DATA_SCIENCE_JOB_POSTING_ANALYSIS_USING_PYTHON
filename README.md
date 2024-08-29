@@ -10,7 +10,7 @@ Below are the questions I want to answer in my project:
 2. How are in-demand skills trending for Data Analysts?
 3. Top 10 skills for Data Analyst? (High Demand)
 4. What are the Median Salaries offered across Top 5 country for 3 popular data role
-5. How do different data jobs Titles?
+5. How do Median salary vary across different data jobs Titles
 6. What are the optimal skills for data analysts to learn? (High Demand AND High Paying)
 # Tools I Used
 For my deep dive into the data analyst job market, I harnessed the power of several key tools:
@@ -49,7 +49,7 @@ To find the most demanded skills for the top 3 most popular data roles. I filter
 View my notebook with detailed steps here: [2_Skill_Demand](/Data_Science_Job_Postings_analysis/8_Top_skillsFor_DataScientists_Engineers_Analysts.ipynb)
 
 ### Results:
-![alt text](image.png)
+![alt text](/assets/image.png)
 
 Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.
 
@@ -61,7 +61,7 @@ View my notebook with detailed steps here:
 [Top 5 Skills Trend](/Data_Science_Job_Postings_analysis/7_Top5_skills_trend_across_year_DataAnalyst.ipynb)
 
 ### Result:
-![alt text](image-1.png)
+![alt text](/assets/image-1.png)
 
 
 
@@ -72,7 +72,7 @@ To identify the Top 10 skills For Data Analyst, I only got jobs in the United St
 View my notebook with detailed steps here: [Top_10](/Data_Science_Job_Postings_analysis/6_Top_10_skills_for_Data_Analyst.ipynb)
 
 ### Result:
-![alt text](image-3.png)
+![alt text](/assets/image-3.png)
 
 The Graph shows Skills like: **SQL**, **Excel**, **Python** are The One in high demand 
 
@@ -82,24 +82,23 @@ To identify the Median salaries offered across different countries for 3 popular
 View my notebook with detailed steps here: [Top_5_countires](/Data_Science_Job_Postings_analysis/4_Top5_country_median_salary_analysis.ipynb)
 
 ### Result:
-![alt text](image-4.png)
+![alt text](/assets/image-4.png)
 
-## 5. How do different data jobs Titles?
+## 5. How do Median salary vary across different data jobs Titles?
 
 To identify the highest-paying job roles, I only got jobs in the United States and looked at their median salary.
 
 View my notebook with detailed steps here:[Media Salary For Diff JOB TITLES](/Data_Science_Job_Postings_analysis/3_MedianSalary_of_Diff_JobTitles.ipynb)
 
 ### Result:
-![alt text](image-2.png)
-
+![alt text](/assets/image-2.png)
 ## 6. What are the optimal skills for data analysts to learn? (High Demand AND High Paying)
 To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
 View my notebook with detailed steps here: [Scatter_plot](/Data_Science_Job_Postings_analysis/11_Data_Analyst_skills_MedianSalaryVsTotalCount.ipynb)
 
 ### Result:
-![alt text](image-5.png)
+![alt text](/assets/image-5.png)
 - More commonly required skills like Excel and SQL have a large presence in job listings but lower median salaries compared to specialized skills like Python and Tableau, which not only have higher salaries but are also moderately prevalent in job listings.
 - Skills such as Python, Tableau, and SQL Server are towards the higher end of the salary spectrum while also being fairly common in job listings, indicating that proficiency in these tools can lead to good opportunities in data analytics.
 
